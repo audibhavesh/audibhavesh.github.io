@@ -25,7 +25,7 @@ for index, filename in enumerate(sorted(os.listdir(input_folder)), start=1):
     boy_or_girl = "girl" if girl_status == "On" else "boy"
 
     # New filename
-    new_filename = f"avatar_{boy_or_girl}_{index:02}.png"
+    new_filename = f"avatar_{boy_or_girl}_{index:02}.svg"
     input_path = os.path.join(input_folder, filename)
     output_path = os.path.join(output_folder, new_filename)
 
@@ -34,7 +34,7 @@ for index, filename in enumerate(sorted(os.listdir(input_folder)), start=1):
 
     # Add entry to the JSON list
     image_entry = {
-        "imageurl": f"https://audibhavesh.github.io/{output_folder}/{new_filename}",
+        "imageUrl": f"https://audibhavesh.github.io/{output_folder}/{new_filename}",
         "width": 256,
         "height": 256
     }
