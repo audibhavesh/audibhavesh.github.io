@@ -34,7 +34,7 @@ for index, filename in enumerate(sorted(os.listdir(input_folder)), start=1):
 
     # Add entry to the JSON list
     image_entry = {
-        "imageurl": f"https://audibhavesh.github.io/avatar/{new_filename}",
+        "imageurl": f"https://audibhavesh.github.io/{output_folder}/{new_filename}",
         "width": 256,
         "height": 256
     }
