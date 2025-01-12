@@ -25,7 +25,7 @@ for index, filename in enumerate(sorted(os.listdir(input_folder)), start=1):
     boy_or_girl = "girl" if girl_status == "On" else "boy"
 
     # New filename
-    new_filename = f"avatar_{boy_or_girl}_{index:02}.svg"
+    new_filename = f"avatar_{boy_or_girl}_{index:02}.jpg"
     input_path = os.path.join(input_folder, filename)
     output_path = os.path.join(output_folder, new_filename)
 
